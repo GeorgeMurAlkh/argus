@@ -1,11 +1,4 @@
 $ docker-compose up -d
 
-$ cd argus-backend
-$ npm i
-$ npm run start:dev
-
-----------------
-
-$ cd argus-frontend
-$ npm i
-$ npm start
+Backend made with NestJS + Frontend React + TypeScript
+Backend deployed with mongodb in Docker container with docker-compose

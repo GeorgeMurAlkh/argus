@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { apiUrl } from '../helpers/constants';
 
-const API_URL = `http://${process.env.SERVER_IP}:3000/api/auth`;
+const API_URL = `${apiUrl}/api/auth`;
 
 export const authHeader = () => {
   const userStr = localStorage.getItem('user');

@@ -1,9 +1,10 @@
 import { authHeader } from './auth.service';
 import axios from 'axios';
+import { apiUrl } from '../helpers/constants';
 import { VehicleDocument, VehicleSend } from '../models/vehicle.model';
 
 
-const API_URL = `http://${process.env.SERVER_IP}:3000/api/vehicle`;
+const API_URL = `${apiUrl}/api/vehicle`;
 
 
 export const getVehicles = () => {
