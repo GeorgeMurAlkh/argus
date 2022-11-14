@@ -3,7 +3,7 @@ import axios from 'axios';
 import { VehicleDocument, VehicleSend } from '../models/vehicle.model';
 
 
-const API_URL = 'http://localhost:3000/api/vehicle';
+const API_URL = `http://${process.env.SERVER_IP}:3000/api/vehicle`;
 
 
 export const getVehicles = () => {
